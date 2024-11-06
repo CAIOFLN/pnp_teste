@@ -1,0 +1,8 @@
+<launch>
+    <!-- Lançamento do nó que publica e realiza a inferência na imagem da câmera -->
+    <node name="image_publisher_inference_node" pkg="pnp_cbr" type="image_publisher.py" output="screen">
+        <param name="model_path" value="/home/caio/catkin_ws/src/pnp_cbr/bestoficial.pt"/>
+        <param name="output_topic" value="/image_inference/output"/>
+        
+    </node>
+</launch>
